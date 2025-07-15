@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fblanchette\\Documents\\GitHub\\dnd-init-lp-tracker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{019542F3-0E10-36F2-A66B-62231937A66C}|dnd-init-lp-tracker\\dnd-init-lp-tracker.csproj|c:\\users\\fblanchette\\documents\\github\\dnd-init-lp-tracker\\dnd-init-lp-tracker\\models\\tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{019542F3-0E10-36F2-A66B-62231937A66C}|dnd-init-lp-tracker\\dnd-init-lp-tracker.csproj|solutionrelative:dnd-init-lp-tracker\\models\\tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{019542F3-0E10-36F2-A66B-62231937A66C}|dnd-init-lp-tracker\\dnd-init-lp-tracker.csproj|c:\\users\\fblanchette\\documents\\github\\dnd-init-lp-tracker\\dnd-init-lp-tracker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{019542F3-0E10-36F2-A66B-62231937A66C}|dnd-init-lp-tracker\\dnd-init-lp-tracker.csproj|solutionrelative:dnd-init-lp-tracker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{019542F3-0E10-36F2-A66B-62231937A66C}|dnd-init-lp-tracker\\dnd-init-lp-tracker.csproj|c:\\users\\fblanchette\\documents\\github\\dnd-init-lp-tracker\\dnd-init-lp-tracker\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{019542F3-0E10-36F2-A66B-62231937A66C}|dnd-init-lp-tracker\\dnd-init-lp-tracker.csproj|solutionrelative:dnd-init-lp-tracker\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\fblanchette\\Documents\\GitHub\\dnd-init-lp-tracker\\dnd-init-lp-tracker\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "dnd-init-lp-tracker\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\fblanchette\\Documents\\GitHub\\dnd-init-lp-tracker\\dnd-init-lp-tracker\\Form1.Designer.cs",
+              "RelativeToolTip": "dnd-init-lp-tracker\\Form1.Designer.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwDEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T12:23:45.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\fblanchette\\Documents\\GitHub\\dnd-init-lp-tracker\\dnd-init-lp-tracker\\Form1.cs",
+              "RelativeDocumentMoniker": "dnd-init-lp-tracker\\Form1.cs",
+              "ToolTip": "C:\\Users\\fblanchette\\Documents\\GitHub\\dnd-init-lp-tracker\\dnd-init-lp-tracker\\Form1.cs [Conception]",
+              "RelativeToolTip": "dnd-init-lp-tracker\\Form1.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T12:02:40.848Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tracker.cs",
+              "DocumentMoniker": "C:\\Users\\fblanchette\\Documents\\GitHub\\dnd-init-lp-tracker\\dnd-init-lp-tracker\\models\\Tracker.cs",
+              "RelativeDocumentMoniker": "dnd-init-lp-tracker\\models\\Tracker.cs",
+              "ToolTip": "C:\\Users\\fblanchette\\Documents\\GitHub\\dnd-init-lp-tracker\\dnd-init-lp-tracker\\models\\Tracker.cs",
+              "RelativeToolTip": "dnd-init-lp-tracker\\models\\Tracker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T11:52:43.905Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
