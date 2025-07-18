@@ -1,9 +1,51 @@
+using System.ComponentModel;
+using dnd_init_lp_tracker.models;
+
 namespace dnd_init_lp_tracker;
 
-public partial class Form1 : Form
+public partial class _mainContainer : Form
 {
-    public Form1()
+    private string _nameInput;
+    private int _initiativeCount;
+    private int _lifePoints;
+
+    public _mainContainer()
     {
         InitializeComponent();
+        _nameInput = "";
+        _initiativeCount = 0;
+        _lifePoints = 0;
+    }
+
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+    public string NameInput
+    {
+        get => _nameInput;
+        private set => _nameInput = value;
+    }
+
+    public void AddTracker_Click(object sender, EventArgs e)
+    {
+        List<Tracker> lt = Program.Trackers;
+        lt.Add(new Tracker(_nameInput, _initiativeCount, _lifePoints));
+    }
+
+    private void NameTB_TextChanged(object sender, EventArgs e)
+    {
+        TextBox? src = sender as TextBox;
+        if (src != null)
+        {
+            _nameInput = src.Text;
+        }
+    }
+
+    public void IntNumericUpDown_ValueChanged(object sender, EventArgs e)
+    {
+        NumericUpDown? src = sender as NumericUpDown;
+        if (src != null)
+        {
+            if (src.Name.Equals("_lifePointsNumeric")) _lifePoints = (int)src.Value;
+            else _initiativeCount = (int)src.Value;
+        }
     }
 }

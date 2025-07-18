@@ -12,5 +12,7 @@ C:\Users\fblanchette\Documents\GitHub\dnd-init-lp-tracker\dnd-init-lp-tracker\ob
 C:\Users\fblanchette\Documents\GitHub\dnd-init-lp-tracker\dnd-init-lp-tracker\obj\Debug\net9.0-windows\dnd-init-lp-tracker.pdb
 C:\Users\fblanchette\Documents\GitHub\dnd-init-lp-tracker\dnd-init-lp-tracker\obj\Debug\net9.0-windows\dnd-init-lp-tracker.genruntimeconfig.cache
 C:\Users\fblanchette\Documents\GitHub\dnd-init-lp-tracker\dnd-init-lp-tracker\obj\Debug\net9.0-windows\ref\dnd-init-lp-tracker.dll
-C:\Users\fblanchette\Documents\GitHub\dnd-init-lp-tracker\dnd-init-lp-tracker\obj\Debug\net9.0-windows\dnd_init_lp_tracker.Form1.resources
 C:\Users\fblanchette\Documents\GitHub\dnd-init-lp-tracker\dnd-init-lp-tracker\obj\Debug\net9.0-windows\dnd-init-lp-tracker.csproj.GenerateResource.cache
+C:\Users\fblanchette\Documents\GitHub\Dnd-init-lp-tracker\dnd-init-lp-tracker\obj\Debug\net9.0-windows\dnd-init-lp-tracker.sourcelink.json
+C:\Users\fblanchette\Documents\GitHub\dnd-init-lp-tracker\dnd-init-lp-tracker\obj\Debug\net9.0-windows\dnd_init_lp_tracker._mainContainer.resources
+C:\Users\fblanchette\Documents\GitHub\dnd-init-lp-tracker\dnd-init-lp-tracker\obj\Debug\net9.0-windows\dnd_init_lp_tracker.Properties.Resources.resources

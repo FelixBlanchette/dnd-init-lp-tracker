@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dnd-init-lp-tracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2661cb4383a028c37a1718646be18d321206c443")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc25b99a405b657542d2b0724d25eff9cef28e99")]
 [assembly: System.Reflection.AssemblyProductAttribute("dnd-init-lp-tracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dnd-init-lp-tracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

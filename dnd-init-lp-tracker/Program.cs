@@ -1,16 +1,16 @@
+using dnd_init_lp_tracker.models;
+
 namespace dnd_init_lp_tracker;
 
 static class Program
 {
-    /// <summary>
-    ///  The main entry point for the application.
-    /// </summary>
     [STAThread]
     static void Main()
     {
-        // To customize application configuration such as set high DPI settings or default font,
-        // see https://aka.ms/applicationconfiguration.
+        Trackers = [];
         ApplicationConfiguration.Initialize();
-        Application.Run(new Form1());
-    }    
+        Application.Run(new _mainContainer());
+    }
+
+    public static List<Tracker> Trackers { get; set; }
 }
