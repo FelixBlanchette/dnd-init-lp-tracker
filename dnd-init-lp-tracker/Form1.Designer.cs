@@ -13,6 +13,12 @@ partial class _mainContainer
     private Label _lifePointsLbl;
     private NumericUpDown _initiativeCountNumeric;
     private Label _initiativeCountLbl;
+    private Button _resetButton;
+    private Button _addTracker;
+    private Panel _trackerContainer;
+    private Panel _controlPanel;
+    private Label _controlContainerLbl;
+    private Label _trackerContainerLbl;
 
     /// <summary>
     ///  Clean up any resources being used.
@@ -62,6 +68,7 @@ partial class _mainContainer
         _nextTurnButton.TabIndex = 0;
         _nextTurnButton.Text = "Next Turn";
         _nextTurnButton.UseVisualStyleBackColor = true;
+        _nextTurnButton.Click += NextTurn_Click;
         // 
         // _nameTB
         // 
@@ -204,11 +211,4 @@ partial class _mainContainer
     }
 
     #endregion
-
-    private Button _resetButton;
-    private Button _addTracker;
-    private Panel _trackerContainer;
-    private Panel _controlPanel;
-    private Label _controlContainerLbl;
-    private Label _trackerContainerLbl;
 }

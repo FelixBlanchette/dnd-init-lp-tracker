@@ -5,31 +5,20 @@ namespace dnd_init_lp_tracker.models;
 public class Tracker
 {
     private string _name;
-    private InitiativeTracker _initiativeTracker;
-    private LifePointsTracker _lifePointsTracker;
+    private int _initiativeCount;
+    private int _lifePoints;
+    private bool _isTurnChar;
 
     public Tracker(string name, int initiativeCount, int lifePoints)
     {
         _name = name;
-        _initiativeTracker = new InitiativeTracker(initiativeCount);
-        _lifePointsTracker = new LifePointsTracker(lifePoints);
+        _initiativeCount = initiativeCount;
+        _lifePoints = lifePoints;
+        _isTurnChar = false;
     }
 
-    public string Name
-    {
-        get => _name;
-        private set => _name = value;
-    }
-
-    public InitiativeTracker InitiativeTracker
-    {
-        get => _initiativeTracker;
-        private set => _initiativeTracker = value;
-    }
-
-    public LifePointsTracker LifePointsTracker
-    {
-        get => _lifePointsTracker;
-        private set => _lifePointsTracker = value;
-    }
+    public string Name { get; set; }
+    public int InitiativeCount { get; set; }
+    public int LifePoints { get; set; }
+    public bool IsTurnChar { get; set; }
 }

@@ -4,6 +4,8 @@ namespace dnd_init_lp_tracker;
 
 static class Program
 {
+
+    public static List<Tracker> Trackers { get; set; }
     [STAThread]
     static void Main()
     {
@@ -11,6 +13,4 @@ static class Program
         ApplicationConfiguration.Initialize();
         Application.Run(new _mainContainer());
     }
-
-    public static List<Tracker> Trackers { get; set; }
 }
