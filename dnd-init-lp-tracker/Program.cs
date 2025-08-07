@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using dnd_init_lp_tracker.models;
 
 namespace dnd_init_lp_tracker;
@@ -5,7 +6,7 @@ namespace dnd_init_lp_tracker;
 static class Program
 {
 
-    public static List<Tracker> Trackers { get; set; }
+    public static BindingList<Tracker> Trackers { get; set; }
     [STAThread]
     static void Main()
     {

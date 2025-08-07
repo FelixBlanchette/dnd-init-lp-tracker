@@ -19,6 +19,7 @@ partial class _mainContainer
     private Panel _controlPanel;
     private Label _controlContainerLbl;
     private Label _trackerContainerLbl;
+    private ListBox _listBox1;
 
     /// <summary>
     ///  Clean up any resources being used.
@@ -54,17 +55,18 @@ partial class _mainContainer
         _controlPanel = new Panel();
         _controlContainerLbl = new Label();
         _trackerContainerLbl = new Label();
+        _listBox1 = new ListBox();
         ((System.ComponentModel.ISupportInitialize)_lifePointsNumeric).BeginInit();
         ((System.ComponentModel.ISupportInitialize)_initiativeCountNumeric).BeginInit();
+        _trackerContainer.SuspendLayout();
         _controlPanel.SuspendLayout();
         SuspendLayout();
         // 
         // _nextTurnButton
         // 
-        _nextTurnButton.Location = new Point(70, 33);
-        _nextTurnButton.Margin = new Padding(4, 5, 4, 5);
+        _nextTurnButton.Location = new Point(49, 20);
         _nextTurnButton.Name = "_nextTurnButton";
-        _nextTurnButton.Size = new Size(140, 38);
+        _nextTurnButton.Size = new Size(98, 23);
         _nextTurnButton.TabIndex = 0;
         _nextTurnButton.Text = "Next Turn";
         _nextTurnButton.UseVisualStyleBackColor = true;
@@ -72,75 +74,71 @@ partial class _mainContainer
         // 
         // _nameTB
         // 
-        _nameTB.Location = new Point(78, 207);
-        _nameTB.Margin = new Padding(4, 5, 4, 5);
+        _nameTB.Location = new Point(55, 124);
         _nameTB.Name = "_nameTB";
-        _nameTB.Size = new Size(141, 31);
+        _nameTB.Size = new Size(100, 23);
         _nameTB.TabIndex = 1;
         _nameTB.TextChanged += NameTB_TextChanged;
         // 
         // _nameLbl
         // 
         _nameLbl.AutoSize = true;
-        _nameLbl.Location = new Point(11, 213);
-        _nameLbl.Margin = new Padding(4, 0, 4, 0);
+        _nameLbl.Location = new Point(8, 128);
         _nameLbl.Name = "_nameLbl";
-        _nameLbl.Size = new Size(59, 25);
+        _nameLbl.Size = new Size(39, 15);
         _nameLbl.TabIndex = 2;
         _nameLbl.Text = "Name";
         // 
         // _lifePointsNumeric
         // 
-        _lifePointsNumeric.Location = new Point(123, 292);
-        _lifePointsNumeric.Margin = new Padding(4, 5, 4, 5);
+        _lifePointsNumeric.Location = new Point(86, 175);
         _lifePointsNumeric.Name = "_lifePointsNumeric";
-        _lifePointsNumeric.Size = new Size(84, 31);
+        _lifePointsNumeric.Size = new Size(59, 23);
         _lifePointsNumeric.TabIndex = 3;
         _lifePointsNumeric.ValueChanged += IntNumericUpDown_ValueChanged;
         // 
         // _lifePointsLbl
         // 
         _lifePointsLbl.AutoSize = true;
-        _lifePointsLbl.Location = new Point(11, 294);
-        _lifePointsLbl.Margin = new Padding(4, 0, 4, 0);
+        _lifePointsLbl.Location = new Point(8, 176);
         _lifePointsLbl.Name = "_lifePointsLbl";
-        _lifePointsLbl.Size = new Size(94, 25);
+        _lifePointsLbl.Size = new Size(62, 15);
         _lifePointsLbl.TabIndex = 4;
         _lifePointsLbl.Text = "Life points";
         // 
         // _initiativeCountNumeric
         // 
-        _initiativeCountNumeric.Location = new Point(110, 248);
-        _initiativeCountNumeric.Margin = new Padding(4, 5, 4, 5);
+        _initiativeCountNumeric.Location = new Point(77, 149);
         _initiativeCountNumeric.Name = "_initiativeCountNumeric";
-        _initiativeCountNumeric.Size = new Size(57, 31);
+        _initiativeCountNumeric.Size = new Size(40, 23);
         _initiativeCountNumeric.TabIndex = 5;
         _initiativeCountNumeric.ValueChanged += IntNumericUpDown_ValueChanged;
         // 
         // _initiativeCountLbl
         // 
         _initiativeCountLbl.AutoSize = true;
-        _initiativeCountLbl.Location = new Point(11, 254);
-        _initiativeCountLbl.Margin = new Padding(4, 0, 4, 0);
+        _initiativeCountLbl.Location = new Point(8, 152);
         _initiativeCountLbl.Name = "_initiativeCountLbl";
-        _initiativeCountLbl.Size = new Size(78, 25);
+        _initiativeCountLbl.Size = new Size(52, 15);
         _initiativeCountLbl.TabIndex = 6;
         _initiativeCountLbl.Text = "Initiative";
         // 
         // _resetButton
         // 
-        _resetButton.Location = new Point(70, 93);
+        _resetButton.Location = new Point(49, 56);
+        _resetButton.Margin = new Padding(2);
         _resetButton.Name = "_resetButton";
-        _resetButton.Size = new Size(140, 34);
+        _resetButton.Size = new Size(98, 20);
         _resetButton.TabIndex = 7;
         _resetButton.Text = "Reset";
         _resetButton.UseVisualStyleBackColor = true;
         // 
         // _addTracker
         // 
-        _addTracker.Location = new Point(70, 150);
+        _addTracker.Location = new Point(49, 90);
+        _addTracker.Margin = new Padding(2);
         _addTracker.Name = "_addTracker";
-        _addTracker.Size = new Size(140, 34);
+        _addTracker.Size = new Size(98, 20);
         _addTracker.TabIndex = 8;
         _addTracker.Text = "Add a tracker";
         _addTracker.UseVisualStyleBackColor = true;
@@ -149,10 +147,12 @@ partial class _mainContainer
         // _trackerContainer
         // 
         _trackerContainer.BackColor = SystemColors.Info;
+        _trackerContainer.Controls.Add(_listBox1);
         _trackerContainer.ForeColor = SystemColors.ControlText;
-        _trackerContainer.Location = new Point(270, 38);
+        _trackerContainer.Location = new Point(189, 23);
+        _trackerContainer.Margin = new Padding(2);
         _trackerContainer.Name = "_trackerContainer";
-        _trackerContainer.Size = new Size(815, 658);
+        _trackerContainer.Size = new Size(570, 395);
         _trackerContainer.TabIndex = 9;
         // 
         // _controlPanel
@@ -167,43 +167,54 @@ partial class _mainContainer
         _controlPanel.Controls.Add(_nameLbl);
         _controlPanel.Controls.Add(_nameTB);
         _controlPanel.Controls.Add(_nextTurnButton);
-        _controlPanel.Location = new Point(12, 105);
+        _controlPanel.Location = new Point(8, 63);
+        _controlPanel.Margin = new Padding(2);
         _controlPanel.Name = "_controlPanel";
-        _controlPanel.Size = new Size(260, 356);
+        _controlPanel.Size = new Size(182, 214);
         _controlPanel.TabIndex = 10;
         // 
         // _controlContainerLbl
         // 
         _controlContainerLbl.AutoSize = true;
-        _controlContainerLbl.Location = new Point(12, 75);
+        _controlContainerLbl.Location = new Point(8, 45);
+        _controlContainerLbl.Margin = new Padding(2, 0, 2, 0);
         _controlContainerLbl.Name = "_controlContainerLbl";
-        _controlContainerLbl.Size = new Size(79, 25);
+        _controlContainerLbl.Size = new Size(52, 15);
         _controlContainerLbl.TabIndex = 11;
         _controlContainerLbl.Text = "Controls";
         // 
         // _trackerContainerLbl
         // 
         _trackerContainerLbl.AutoSize = true;
-        _trackerContainerLbl.Location = new Point(270, 10);
+        _trackerContainerLbl.Location = new Point(189, 6);
+        _trackerContainerLbl.Margin = new Padding(2, 0, 2, 0);
         _trackerContainerLbl.Name = "_trackerContainerLbl";
-        _trackerContainerLbl.Size = new Size(74, 25);
+        _trackerContainerLbl.Size = new Size(49, 15);
         _trackerContainerLbl.TabIndex = 12;
         _trackerContainerLbl.Text = "Trackers";
         // 
+        // listBox1
+        // 
+        _listBox1.FormattingEnabled = true;
+        _listBox1.Location = new Point(6, 5);
+        _listBox1.Name = "listBox1";
+        _listBox1.Size = new Size(561, 379);
+        _listBox1.TabIndex = 0;
+        // 
         // _mainContainer
         // 
-        AutoScaleDimensions = new SizeF(10F, 25F);
+        AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(1143, 732);
+        ClientSize = new Size(800, 439);
         Controls.Add(_trackerContainerLbl);
         Controls.Add(_controlContainerLbl);
         Controls.Add(_controlPanel);
         Controls.Add(_trackerContainer);
-        Margin = new Padding(4, 5, 4, 5);
-        NameInput = "_mainContainer";
+        Name = "_mainContainer";
         Text = "Initiative & Life points Tracker";
         ((System.ComponentModel.ISupportInitialize)_lifePointsNumeric).EndInit();
         ((System.ComponentModel.ISupportInitialize)_initiativeCountNumeric).EndInit();
+        _trackerContainer.ResumeLayout(false);
         _controlPanel.ResumeLayout(false);
         _controlPanel.PerformLayout();
         ResumeLayout(false);
@@ -211,4 +222,5 @@ partial class _mainContainer
     }
 
     #endregion
+
 }

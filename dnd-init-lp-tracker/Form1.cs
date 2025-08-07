@@ -8,7 +8,7 @@ public partial class _mainContainer : Form
     private string _nameInput;
     private int _initiativeCount;
     private int _lifePoints;
-    private List<Tracker> _listTrackers;
+    private BindingList<Tracker> _listTrackers;
 
     public _mainContainer()
     {
@@ -16,7 +16,15 @@ public partial class _mainContainer : Form
         _nameInput = "";
         _initiativeCount = 0;
         _lifePoints = 0;
-        List<Tracker> _listTrackers = Program.Trackers;
+        _listTrackers = Program.Trackers;
+        _listBox1.DisplayMember = "Name";
+        _listBox1.DisplayMember = "InitiativeCount";
+        _listBox1.DisplayMember = "LifePoints";
+    }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        _listBox1.DataSource = _listTrackers;
     }
 
     [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
